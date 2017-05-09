@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.leeSingleViewApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<!--该项目模板不使用Storyboard模式，采用纯代码模式-->
+		<!--<string>com.apple.dt.unit.storyboardApplicationLee</string>-->
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplicationLee</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>包括了单个视图、storyboard、和一些环境配置文件来区分不同target</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<!--资源-->
+						<string>Classes/Resource</string>
+						<!--第三方库-->
+						<string>Classes/External/Libs</string>
+						<!--第三方代码-->
+						<string>Classes/External/Vendor</string>
+						<!--业务模块-->
+						<string>Classes/Section/Common/Model</string>
+						<string>Classes/Section/Common/View</string>
+						<string>Classes/Section/Common/ViewController</string>
+	
+						<string>Configuration/ConfigBase.xcconfig:comments</string>
+						<string>Configuration/ConfigBase.xcconfig:inserts:appVersion</string>
+						<string>Configuration/ConfigBase.xcconfig:inserts:appBuildVersion</string>
+
+						<string>Configuration/Release.xcconfig:comments</string>
+						<string>Configuration/Release.xcconfig:includes:includeBaseConfig</string>
+						<string>Configuration/Release.xcconfig:inserts:appDisplayName</string>
+						<string>Configuration/Release.xcconfig:inserts:appBaseService</string>
+
+						<string>Configuration/Debug.xcconfig:comments</string>
+						<string>Configuration/Debug.xcconfig:includes:includeBaseConfig</string>
+						<string>Configuration/Debug.xcconfig:inserts:appDisplayName</string>
+						<string>Configuration/Debug.xcconfig:inserts:appBaseService</string>
+
+						<string>Configuration/AdHoc.xcconfig:comments</string>
+						<string>Configuration/AdHoc.xcconfig:includes:includeBaseConfig</string>
+						<string>Configuration/AdHoc.xcconfig:inserts:appDisplayName</string>
+						<string>Configuration/AdHoc.xcconfig:inserts:appBaseService</string>
+
+						<string>Classes/Main/Base/ViewController/BaseViewController.h:comments</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.h:imports:importCocoa</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:comments</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:imports:importHeader:BaseViewController.h</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:extension</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:implementation:methods:viewDidLoad:super</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:implementation:methods:didReceiveMemoryWarning(- (void\)didReceiveMemoryWarning)</string>
+						<string>Classes/Main/Base/ViewController/BaseViewController.m:implementation:methods:didReceiveMemoryWarning:super</string>
+
+						<string>Classes/Main/Base/ViewController/MainViewController.h:comments</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.h:imports:importCocoa</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.h:imports:importHeader:BaseViewController.h</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.h:interface(___FILEBASENAME___ : BaseViewController)</string>
+
+						<string>Classes/Main/Base/ViewController/MainViewController.m:comments</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:imports:importHeader:MainViewController.h</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:extension</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:implementation:methods:viewDidLoad:super</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:implementation:methods:didReceiveMemoryWarning(- (void\)didReceiveMemoryWarning)</string>
+						<string>Classes/Main/Base/ViewController/MainViewController.m:implementation:methods:didReceiveMemoryWarning:super</string>
+
+						<string>AppDelegate.m:imports:importHeader:MainViewController.h</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+
+						<string>Classes/Main/Base/Model/BaseObject.h:comments</string>
+						<string>Classes/Main/Base/Model/BaseObject.h:imports:importFoundation</string>
+						<string>Classes/Main/Base/Model/BaseObject.h:interface(___FILEBASENAME___ : NSObject)</string>
+
+						<string>Classes/Main/Base/Model/BaseObject.m:comments</string>
+						<string>Classes/Main/Base/Model/BaseObject.m:imports:importHeader:BaseObject.h</string>
+						<string>Classes/Main/Base/Model/BaseObject.m:implementation</string>
+
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>ViewController.swift:comments</string>
+						<string>ViewController.swift:imports:importCocoa</string>
+						<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+						<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+						<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+						<string>ViewController.swift:implementation:methods:didReceiveMemoryWarning(override func didReceiveMemoryWarning(\))</string>
+						<string>ViewController.swift:implementation:methods:didReceiveMemoryWarning:super</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Base.lproj/Main.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>Main.storyboard</string>
+			<key>SortOrder</key>
+			<integer>99</integer>
+		</dict>
+
+		<!--配置信息-->
+		<key>Configuration/ConfigBase.xcconfig</key>
+		<dict>
+			<key>Path</key>
+			<string>ConfigBase.xcconfig</string>
+			<key>Group</key>
+			<string>Configuration</string>
+		</dict>
+		<key>Configuration/Release.xcconfig</key>
+		<dict>
+			<key>Path</key>
+			<string>Configuration/Release.xcconfig</string>
+			<key>Group</key>
+			<string>Configuration</string>
+		</dict>
+		<key>Configuration/Debug.xcconfig</key>
+		<dict>
+			<key>Path</key>
+			<string>Configuration/Debug.xcconfig</string>
+			<key>Group</key>
+			<string>Configuration</string>
+		</dict>
+		<key>Configuration/AdHoc.xcconfig</key>
+		<dict>
+			<key>Path</key>
+			<string>Configuration/AdHoc.xcconfig</string>
+			<key>Group</key>
+			<string>Configuration</string>
+		</dict>
+
+		<key>Classes/Main/Base/ViewController/BaseViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseViewController.h</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>ViewController</string>
+        	</array>
+		</dict>
+		<key>Classes/Main/Base/ViewController/BaseViewController.m</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseViewController.m</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>ViewController</string>
+        	</array>
+		</dict>
+		<key>Classes/Main/Base/ViewController/MainViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>MainViewController.h</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>ViewController</string>
+        	</array>
+		</dict>
+		<key>Classes/Main/Base/ViewController/MainViewController.m</key>
+		<dict>
+			<key>Path</key>
+			<string>MainViewController.m</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>ViewController</string>
+        	</array>
+		</dict>
+		<key>AppDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.h</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+        	</array>
+		</dict>
+		<key>AppDelegate.m</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.m</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+        	</array>
+		</dict>
+		<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+		<string>// Override point for customization after application launch.
+_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+_window.backgroundColor = [UIColor whiteColor];
+_window.rootViewController = [[MainViewController alloc]init];
+[_window makeKeyAndVisible];</string>
+
+	    <key>Classes/Main/Base/Model/BaseObject.h</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseObject.h</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>Model</string>
+        	</array>
+		</dict>
+		<key>Classes/Main/Base/Model/BaseObject.m</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseObject.m</string>
+			<key>Group</key>
+			<array>
+	            <string>Classes</string>
+	            <string>Main</string>
+	            <string>Base</string>
+	            <string>Model</string>
+        	</array>
+		</dict>
+
+		<key>Classes/Section/Common/Model</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>Model</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	            <string>Section</string>
+	            <string>Common</string>
+	        </array>
+	    </dict>
+	    <key>Classes/Section/Common/View</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>View</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	            <string>Section</string>
+	            <string>Common</string>
+	        </array>
+	    </dict>
+	    <key>Classes/Section/Common/ViewController</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>ViewController</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	            <string>Section</string>
+	            <string>Common</string>
+	        </array>
+	    </dict>
+
+	    <key>Classes/External/Libs</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>External</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	            <string>External</string>
+	        </array>
+	    </dict>
+
+	    <key>Classes/External/Vendor</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>External</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	            <string>External</string>
+	        </array>
+	    </dict>
+
+	    <key>Classes/Resource</key>
+	    <dict>
+	        <key>Path</key>
+	        <string>Resource</string>
+	        <key>Group</key>
+	        <array>
+	            <string>Classes</string>
+	        </array>
+	    </dict>
+	</dict>
+</dict>
+</plist>
